@@ -20,6 +20,7 @@ body {
     padding-top: 15px;
     box-sizing: border-box;
     border-radius: 3%;
+    opacity: 0.8;
 }
   
 #countdown-box {
@@ -44,7 +45,7 @@ body {
  
 #start-button {
     padding: 10px 10px;
-    background-color: #1a73e8;
+    background-color: #77a577;
     border: none;
     border-radius: 3px;
     width: 100px;
@@ -54,7 +55,7 @@ body {
 }
   
 #start-button:hover {
-    background-color: #1a73e8ae;
+    background-color: #799b79;
 }
   
 #links{
