@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
   }
+
+a{
+    text-decoration: none;
+}
   
 #countdown-container {
     position: fixed;
@@ -21,6 +25,7 @@ body {
     box-sizing: border-box;
     border-radius: 3%;
     opacity: 0.8;
+    z-index: 1;
 }
   
 #countdown-box {
@@ -75,3 +80,10 @@ body {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
+.grid-container {
+    display: grid;
+    grid: 150px / auto auto auto;
+    row-gap: 350px;
+  }
+
