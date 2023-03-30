@@ -14,7 +14,7 @@ document.addEventListener("keydown", function(event){
     }
 });
 
-const countdownTime = 10;
+const countdownTime = 60*60;
 
 function formatTime(timeInSeconds) {
   const minutes = Math.floor(timeInSeconds / 60);
