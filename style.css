@@ -1,0 +1,76 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+#countdown-container {
+    position: fixed;
+    top: 1%;
+    right: 0.5%;
+    width: 175px;
+    height: 220px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 1px #ccc;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-radius: 3%;
+}
+  
+#countdown-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#time-left{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+  
+#countdown {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+#start-button {
+    padding: 10px 10px;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+  
+#start-button:hover {
+    background-color: #1a73e8ae;
+}
+  
+#links{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    padding-bottom: 20px;  
+}
+
+#links>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
