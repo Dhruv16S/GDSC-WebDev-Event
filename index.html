@@ -3,34 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tech TrekX</title>
-    <link rel="stylesheet" href="./common_styles.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./new_styles.css" />
-    <link rel="stylesheet" href="./countdown_styles.css" />
-    <link rel="icon" type="image/x-icon" href="GDSC Logo.png" />
+    <link rel="stylesheet" href="./styles/common_styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/new_styles.css" />
+    <link rel="stylesheet" href="./styles/countdown_styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/GDSC_Logo.png" />
+    <script defer src="./scripts/script.js"></script>
   </head>
   <body>
-    <div id="countdown-box">
+    <!-- Countdown Timer -->
+    <aside id="countdown-box">
       <p id="time-left">Time Remaining</p>
       <div id="countdown"></div>
       <button id="start-button">Start contest!</button>
       <div id="links">
         <a href="google.com"
-          ><img src="file-arrow-up.svg" alt="Upload files" height="15" />
+          ><img
+            src="./assets/file-arrow-up.svg"
+            alt="Upload files"
+            height="15"
+          />
           Submission Link</a
         >
         <br />
         <a href=""
-          ><img src="info-circle.svg" alt="Cheatsheet" height="15" /> View
-          Cheatsheet</a
+          ><img src="./assets/info-circle.svg" alt="Cheatsheet" height="15" />
+          View Cheatsheet</a
         >
       </div>
-    </div>
-    <header><img src="GDSC_Logo_Round2.png" alt="Logo" /></header>
+    </aside>
+    <header><img src="./assets/GDSC_Logo_Round2.png" alt="Logo" /></header>
     <!-- Jumbotron -->
-    <div class="jumbotron">
+    <section class="jumbotron">
       <h1>Chaitanya Bharathi Institute of Technology<br />Hyderabad</h1>
-    </div>
+    </section>
     <!-- GDSC Global -->
     <section class="gdsc-global">
       <h3>Google Developer Student Clubs</h3>
@@ -66,14 +72,14 @@
         </ul>
       </div>
       <div class="gdsc-cbit__pic">
-        <img src="GDSC Logo.png" alt="" />
+        <img src="./assets/GDSC_Logo.png" alt="" />
       </div>
     </section>
     <!-- Cards Section-->
     <section class="gdsc-cards">
       <!-- App Development -->
       <div class="card">
-        <img class="card-img-top" src="Android.png" alt="Card image" />
+        <img class="card-img-top" src="./assets/Android.png" alt="Card image" />
         <div class="card-body">
           <h3 class="card-title">App Development</h3>
           <p class="card-text">
@@ -88,7 +94,7 @@
       <!-- Cloud Technologies -->
 
       <div class="card">
-        <img class="card-img-top" src="cloud.jpg" alt="Card image" />
+        <img class="card-img-top" src="./assets/cloud.jpg" alt="Card image" />
         <div class="card-body">
           <h4 class="card-title">Cloud Technologies</h4>
           <p class="card-text">
@@ -102,7 +108,7 @@
       <!-- Competitive Programming -->
 
       <div class="card">
-        <img class="card-img-top" src="cp.png" alt="Card image" />
+        <img class="card-img-top" src="./assets/cp.png" alt="Card image" />
         <div class="card-body">
           <h4 class="card-title">Competitive Programming</h4>
           <p class="card-text">
@@ -117,7 +123,7 @@
       <!-- Machine Learning -->
 
       <div class="card">
-        <img class="card-img-top" src="ml.jpg" alt="Card image" />
+        <img class="card-img-top" src="./assets/ml.jpg" alt="Card image" />
         <div class="card-body">
           <h4 class="card-title">Machine Learning</h4>
           <p class="card-text">
@@ -132,7 +138,7 @@
       <!-- Web Development -->
 
       <div class="card">
-        <img class="card-img-top" src="web.jpg" alt="Card image" />
+        <img class="card-img-top" src="./assets/web.jpg" alt="Card image" />
         <div class="card-body">
           <h4 class="card-title">Web Development</h4>
           <p class="card-text">
@@ -144,7 +150,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Contact Section -->
     <div class="container-contact">
       <form action="">
         <h3>Contact Us</h3>
@@ -159,7 +165,5 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
