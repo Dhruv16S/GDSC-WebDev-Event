@@ -11,7 +11,7 @@ header img {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  background-image: url("../assets/GDSC_Banner.png");
+  background-image: url("../assets/banners/GDSC_Banner.png");
 }
 /* GDSC Global */
 .gdsc-global {

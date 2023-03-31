@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <title>Tech TrekX</title>
     <link rel="stylesheet" href="./styles/common_styles.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/new_styles.css" />
     <link rel="stylesheet" href="./styles/countdown_styles.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/GDSC_Logo.png" />
+    <link rel="stylesheet" href="./styles/new_styles.css" />
+    <link rel="stylesheet" href="./styles/contact_styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/gdsc_icon.png" />
     <script defer src="./scripts/script.js"></script>
   </head>
   <body>
@@ -19,7 +19,7 @@
       <div id="links">
         <a href="google.com"
           ><img
-            src="./assets/file-arrow-up.svg"
+            src="./assets/icons/file-arrow-up.svg"
             alt="Upload files"
             height="15"
           />
@@ -27,12 +27,18 @@
         >
         <br />
         <a href=""
-          ><img src="./assets/info-circle.svg" alt="Cheatsheet" height="15" />
+          ><img
+            src="./assets/icons/info-circle.svg"
+            alt="Cheatsheet"
+            height="15"
+          />
           View Cheatsheet</a
         >
       </div>
     </aside>
-    <header><img src="./assets/GDSC_Logo_Round2.png" alt="Logo" /></header>
+    <header>
+      <img src="./assets/logos/GDSC_Logo_Round2.png" alt="Logo" />
+    </header>
     <!-- Jumbotron -->
     <section class="jumbotron">
       <h1>Chaitanya Bharathi Institute of Technology<br />Hyderabad</h1>
@@ -72,14 +78,19 @@
         </ul>
       </div>
       <div class="gdsc-cbit__pic">
-        <img src="./assets/GDSC_Logo.png" alt="" />
+        <img src="./assets/logos/GDSC_Logo.png" alt="" />
       </div>
     </section>
+
     <!-- Cards Section-->
     <section class="gdsc-cards">
       <!-- App Development -->
       <div class="card">
-        <img class="card-img-top" src="./assets/Android.png" alt="Card image" />
+        <img
+          class="card-img-top"
+          src="./assets/cards/Android.png"
+          alt="Card image"
+        />
         <div class="card-body">
           <h3 class="card-title">App Development</h3>
           <p class="card-text">
@@ -92,9 +103,12 @@
       </div>
 
       <!-- Cloud Technologies -->
-
       <div class="card">
-        <img class="card-img-top" src="./assets/cloud.jpg" alt="Card image" />
+        <img
+          class="card-img-top"
+          src="./assets/cards/cloud.jpg"
+          alt="Card image"
+        />
         <div class="card-body">
           <h4 class="card-title">Cloud Technologies</h4>
           <p class="card-text">
@@ -105,10 +119,14 @@
           </p>
         </div>
       </div>
-      <!-- Competitive Programming -->
 
+      <!-- Competitive Programming -->
       <div class="card">
-        <img class="card-img-top" src="./assets/cp.png" alt="Card image" />
+        <img
+          class="card-img-top"
+          src="./assets/cards/cp.png"
+          alt="Card image"
+        />
         <div class="card-body">
           <h4 class="card-title">Competitive Programming</h4>
           <p class="card-text">
@@ -121,9 +139,12 @@
       </div>
 
       <!-- Machine Learning -->
-
       <div class="card">
-        <img class="card-img-top" src="./assets/ml.jpg" alt="Card image" />
+        <img
+          class="card-img-top"
+          src="./assets/cards/ml.jpg"
+          alt="Card image"
+        />
         <div class="card-body">
           <h4 class="card-title">Machine Learning</h4>
           <p class="card-text">
@@ -136,9 +157,12 @@
       </div>
 
       <!-- Web Development -->
-
       <div class="card">
-        <img class="card-img-top" src="./assets/web.jpg" alt="Card image" />
+        <img
+          class="card-img-top"
+          src="./assets/cards/web.jpg"
+          alt="Card image"
+        />
         <div class="card-body">
           <h4 class="card-title">Web Development</h4>
           <p class="card-text">
@@ -150,9 +174,10 @@
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
     <div class="container-contact">
-      <form action="">
+      <form>
         <h3>Contact Us</h3>
         <input type="text" id="name" placeholder="Your Name" required />
         <input type="email" id="email" placeholder="Email id" required />
