@@ -14,7 +14,7 @@ const startButton = document.getElementById("start-button");
 //   }
 // });
 
-const countdownTime = 60;
+const countdownTime = 60 * 60;
 
 function formatTime(timeInSeconds) {
   const minutes = Math.floor(timeInSeconds / 60);
