@@ -2,19 +2,19 @@ var countdownContainer = document.getElementById("countdown-container");
 const countdown = document.getElementById("countdown");
 const startButton = document.getElementById("start-button");
 
-document.addEventListener("contextmenu", function (event) {
-  event.preventDefault();
-  alert("Right click is not allowed!");
-});
+// document.addEventListener("contextmenu", function (event) {
+//   event.preventDefault();
+//   alert("Right click is not allowed!");
+// });
 
-document.addEventListener("keydown", function (event) {
-  if (event.ctrlKey && (event.keyCode === 73 || event.keyCode === 85)) {
-    event.preventDefault();
-    alert("Inspect mode is not allowed!");
-  }
-});
+// document.addEventListener("keydown", function (event) {
+//   if (event.ctrlKey && (event.keyCode === 73 || event.keyCode === 85)) {
+//     event.preventDefault();
+//     alert("Inspect mode is not allowed!");
+//   }
+// });
 
-const countdownTime = 60 * 60;
+const countdownTime = 60;
 
 function formatTime(timeInSeconds) {
   const minutes = Math.floor(timeInSeconds / 60);
