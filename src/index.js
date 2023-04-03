@@ -9,19 +9,36 @@ if (require("electron-squirrel-startup")) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    icon: path.join(__dirname, "assets", "icons", "gdsc_icon.png"),
     width: 800,
     height: 600,
+    title: "Website",
     webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
       preload: path.join(__dirname, "preload.js"),
-    },
-    webPreferences: {
       devTools: false,
     },
     autoHideMenuBar: true,
   });
-  // mainWindow.removeMenu();
-  // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, "index.html"));
+
+  // Figma Window
+  const designWinow = new BrowserWindow({
+    icon: path.join(__dirname, "assets", "icons", "gdsc_icon.png"),
+    title: "Design Sheet",
+    width: 1000,
+    height: 800,
+    webPreferences: {
+      nodeIntegration: false,
+      devTools: false,
+    },
+    autoHideMenuBar: true,
+  });
+  // designWinow.loadURL(
+  //   "https://www.figma.com/file/5om27XyD5Cidp5FHbqPI1U/GDSC-Webdev-Event---Round-2"
+  // );
+  designWinow.loadFile(path.join(__dirname, "Design Sheet.pdf"));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -48,6 +65,3 @@ app.on("activate", () => {
     createWindow();
   }
 });
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.

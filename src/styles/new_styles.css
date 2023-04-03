@@ -43,11 +43,14 @@ header img {
   flex-direction: column;
   gap: 3rem 0;
 }
+.gdsc-cbit__p {
+  font-size: 1.6rem;
+}
 .gdsc-cbit__content ul {
   margin-left: 5rem;
   font-size: 1.6rem;
 }
-/*  */
+/* GDSC Cards Section */
 .gdsc-cards {
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +59,7 @@ header img {
   gap: 5rem;
 }
 .card {
-  width: 40rem;
+  width: 35rem;
   border: 0.1rem solid rgb(208, 208, 208);
   border-radius: 0.5rem;
 }
